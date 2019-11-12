@@ -1,29 +1,9 @@
-<!DOCTYPE html>
-<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 <html>
 <body>
-<h2>Guess a Letter in Randomly Chosen Word</h2>
-<!--function checkLetter() runs when button element is clicked-->
-<button onclick="checkLetter()">A</button>
-<button onclick="checkLetter()">B</button>
-<button onclick="checkLetter()">C</button>
-<button onclick="checkLetter()">D</button>  
-<p id="displayResutOfChosenLetter"></p>
-<script>    
-function checkLetter() {
-    //ranomly chosen word is always
-    let randomChosenWord = "always";
-    //check if chosen letter is in variable randomChosenWord
-    //The charAt() method returns the character at the specified index in a string.
-    let chosenLetter = randomChosenWord.charAt(2);
-    var txt;
-  if (chosenLetter === randomChosenWord.charAt(2)){
-    txt = "You chose the correct letter";
-  } else {
-    txt = "Sorry, you chose the wrong letter. Try again.";
-  }
-  document.getElementById("displayResutOfChosenLetter").innerHTML = txt;
-}
-</script>
-</body>
-</html>
+  <button onclick="displaycount()"> Wrong guess counter</button>
+  <div id="counter"> 5 </p>
+  <p>Thoughts and comments<br>Counter should be connected to connect to incorrect guess function.<br> Once zero is reached, there should be an alert/display that reads game over</p>
+  </body>
+</html>  
+  
+  
